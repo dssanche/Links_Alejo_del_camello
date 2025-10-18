@@ -3,101 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alejo el del Camello 🐪💜</title>
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/616/616408.png" type="image/png">
+  <title>Alejo el del Camello 🐪</title>
+  <link rel="icon" href="alejo.jpg" type="image/jpeg">
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(180deg, #2b004f, #3c0072);
+      background: linear-gradient(to bottom, rgba(91,44,131,0.8), rgba(142,68,173,0.8)), url('alejo.jpg') no-repeat center center/cover;
       color: white;
       text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    header {
+      padding: 40px 20px 10px 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    p.subtitle {
+      font-size: 1.2rem;
+      color: #f3e6ff;
+      margin-bottom: 40px;
+    }
+
+    .social-links {
       display: flex;
       flex-direction: column;
       align-items: center;
-      min-height: 100vh;
-      padding: 30px 10px;
+      gap: 15px;
+      margin-bottom: 60px;
     }
-    h1 {
-      font-size: 2.2rem;
-      margin-bottom: 10px;
-    }
-    .subtitle {
-      font-size: 1.1rem;
-      color: #e0b3ff;
-      margin-bottom: 30px;
-    }
-    .profile-img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 50%;
-      box-shadow: 0 0 15px #a855f7;
-      margin-bottom: 15px;
-    }
-    .social-links {
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      margin-bottom: 30px;
-    }
-    .social-btn img {
-      width: 40px;
-      height: 40px;
-      transition: transform 0.2s;
-      filter: brightness(0) invert(1);
-    }
-    .social-btn:hover img {
-      transform: scale(1.15);
-    }
-    .button {
-      display: block;
-      background-color: #8b5cf6;
-      color: white;
+
+    .social-btn {
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 14px;
+      padding: 14px 24px;
+      width: 80%;
+      max-width: 350px;
+      color: #5b2c83;
+      font-weight: 600;
       text-decoration: none;
-      padding: 15px 25px;
-      border-radius: 15px;
-      margin: 10px auto;
-      width: 90%;
-      max-width: 300px;
-      font-weight: bold;
-      transition: background 0.3s, transform 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: all 0.25s ease-in-out;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
     }
-    .button:hover {
-      background-color: #a855f7;
-      transform: translateY(-2px);
+
+    .social-btn img {
+      width: 22px;
+      height: 22px;
     }
+
+    .social-btn:hover {
+      transform: scale(1.07);
+      background-color: #d8bff5;
+    }
+
     footer {
-      margin-top: auto;
+      background: rgba(0,0,0,0.4);
+      padding: 12px;
       font-size: 0.9rem;
-      color: #d1aefc;
-      padding-top: 20px;
+      color: #e0c8fa;
+    }
+
+    .mensaje-final {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 30px 20px;
+      border-top: 2px solid rgba(255,255,255,0.3);
+    }
+
+    .mensaje-final h2 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+
+    .mensaje-final p {
+      font-size: 1.1rem;
+      color: #e8d9fa;
+    }
+
+    @media (max-width: 600px) {
+      h1 { font-size: 1.7rem; }
+      .social-btn { width: 90%; }
+      .mensaje-final h2 { font-size: 1.3rem; }
     }
   </style>
 </head>
-<body>
 
-  <img src="alejo.jpg" alt="Foto de Alejo" class="profile-img">
-  <h1>🐪 Alejo el del Camello 💜</h1>
-  <p class="subtitle">Conócelo, súmate y haz parte del cambio. ¡Por más Camello Diario! 🐪</p>
+<body>
+  <header>
+    <h1>Alejo el del Camello 🐪</h1>
+    <p class="subtitle">Conócelo, súmate y haz parte del cambio. ¡Por más Camello Diario! 💪🐪</p>
+  </header>
 
   <div class="social-links">
-    <a href="https://www.instagram.com/alejoeldelcamello/" class="social-btn" target="_blank" title="Instagram">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+    <a href="https://www.instagram.com/alejoeldelcamello/" class="social-btn" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"> Instagram
     </a>
-    <a href="https://x.com/alejoeldelcamello" class="social-btn" target="_blank" title="Twitter/X">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X">
+    <a href="https://x.com/alejoeldelcamello" class="social-btn" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X"> X (Twitter)
     </a>
-    <a href="https://www.tiktok.com/@alejoeldelcamello" class="social-btn" target="_blank" title="TikTok">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok">
+    <a href="https://www.tiktok.com/@alejoeldelcamello" class="social-btn" target="_blank">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok"> TikTok
+    </a>
+    <a href="https://chat.whatsapp.com/BlXfChwXszFHroaBEUDnw8" class="social-btn" target="_blank">
+      🗣️ Grupo de Calle
+    </a>
+    <a href="https://wa.me/573209386454" class="social-btn" target="_blank">
+      💬 Hablar con Sofía
+    </a>
+    <a href="https://mi-registro-whatsapp-9nzs.onrender.com" class="social-btn" target="_blank">
+      📝 Registro al Movimiento
     </a>
   </div>
 
-  <a href="https://chat.whatsapp.com/BlXfChwXszFHroaBEUDnw8" target="_blank" class="button">💬 Únete al grupo de Calle 🐪</a>
-  <a href="https://wa.me/573209386454" target="_blank" class="button">📲 Habla con Sofía 💜</a>
-  <a href="https://mi-registro-whatsapp-9nzs.onrender.com" target="_blank" class="button">📝 Regístrate y súmate al movimiento</a>
+  <section class="mensaje-final">
+    <h2>🐪 ¡El cambio se construye trabajando juntos! 💜</h2>
+    <p>Únete al movimiento de Alejo y ayúdanos a llevar más camello, más oportunidades y más esperanza a cada barrio.</p>
+  </section>
 
-  <footer>© 2025 Movimiento Alejo. Todos los derechos reservados 🐪</footer>
-
+  <footer>
+    © 2025 Alejo el del Camello 🐪 | Todos los derechos reservados
+  </footer>
 </body>
 </html>
