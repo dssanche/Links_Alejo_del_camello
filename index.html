@@ -11,7 +11,8 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom, rgba(91,44,131,0.8), rgba(142,68,173,0.8)), url('alejo.jpg') no-repeat center center/cover;
+      background: linear-gradient(to bottom, rgba(40, 0, 60, 0.65), rgba(0, 0, 0, 0.85)), 
+                  url('alejo.jpg') no-repeat center center/cover;
       color: white;
       text-align: center;
       min-height: 100vh;
@@ -21,82 +22,87 @@
     }
 
     header {
-      padding: 40px 20px 10px 20px;
+      padding-top: 40px;
     }
 
     h1 {
       font-size: 2rem;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     p.subtitle {
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #f3e6ff;
-      margin-bottom: 40px;
+      margin-bottom: 25px;
+    }
+
+    .presentacion {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      backdrop-filter: blur(8px);
+      margin: 0 auto 30px;
+      max-width: 600px;
+      padding: 18px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+
+    .presentacion img {
+      width: 140px; /* 👈 antes 220px */
+      border-radius: 10px;
+      margin-bottom: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+    }
+
+    .presentacion p {
+      font-size: 1rem;
+      color: #f5e9ff;
+      margin: 0 auto;
+      max-width: 500px;
+      line-height: 1.5;
     }
 
     .social-links {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 15px;
-      margin-bottom: 60px;
+      gap: 12px;
+      margin-bottom: 40px;
     }
 
     .social-btn {
       background-color: rgba(255, 255, 255, 0.95);
-      border-radius: 14px;
-      padding: 14px 24px;
+      border-radius: 12px;
+      padding: 12px 22px;
       width: 80%;
-      max-width: 350px;
+      max-width: 320px;
       color: #5b2c83;
       font-weight: 600;
       text-decoration: none;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
+      gap: 8px;
       transition: all 0.25s ease-in-out;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-
-    .social-btn img {
-      width: 22px;
-      height: 22px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.3);
     }
 
     .social-btn:hover {
-      transform: scale(1.07);
+      transform: scale(1.05);
       background-color: #d8bff5;
     }
 
     footer {
       background: rgba(0,0,0,0.4);
-      padding: 12px;
-      font-size: 0.9rem;
+      padding: 10px;
+      font-size: 0.85rem;
       color: #e0c8fa;
     }
 
-    .mensaje-final {
-      background: rgba(0, 0, 0, 0.5);
-      padding: 30px 20px;
-      border-top: 2px solid rgba(255,255,255,0.3);
-    }
-
-    .mensaje-final h2 {
-      font-size: 1.5rem;
-      margin-bottom: 12px;
-    }
-
-    .mensaje-final p {
-      font-size: 1.1rem;
-      color: #e8d9fa;
-    }
-
     @media (max-width: 600px) {
-      h1 { font-size: 1.7rem; }
+      h1 { font-size: 1.6rem; }
+      .presentacion img { width: 110px; }
       .social-btn { width: 90%; }
-      .mensaje-final h2 { font-size: 1.3rem; }
+      .presentacion p { font-size: 0.95rem; }
     }
   </style>
 </head>
@@ -107,31 +113,42 @@
     <p class="subtitle">Conócelo, súmate y haz parte del cambio. ¡Por más Camello Diario! 💪🐪</p>
   </header>
 
-  <div class="social-links">
-    <a href="https://www.instagram.com/alejoeldelcamello/" class="social-btn" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"> Instagram
-    </a>
-    <a href="https://x.com/alejodelcamello" class="social-btn" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X"> X (Twitter)
-    </a>
-    <a href="https://www.tiktok.com/@alejoeldelcamello" class="social-btn" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok"> TikTok
-    </a>
-    <a href="https://chat.whatsapp.com/BlXfChwXszFHroaBEUDnw8" class="social-btn" target="_blank">
-      🗣️ Grupo de Calle
-    </a>
-    <a href="https://wa.me/573209386454" class="social-btn" target="_blank">
-      💬 Hablar con Sara
-    </a>
-    <a href="https://mi-registro-whatsapp-9nzs.onrender.com" class="social-btn" target="_blank">
-      📝 Registro al Movimiento
-    </a>
-  </div>
-
-  <section class="mensaje-final">
-    <h2>🐪 ¡El cambio se construye trabajando juntos! 💜</h2>
-    <p>Únete al movimiento de Alejo y ayúdanos a llevar más camello, más oportunidades y más esperanza a cada barrio.</p>
+  <section class="presentacion">
+    <img src="Alejo_apunta.jpg" alt="Alejo el del Camello apuntando">
+    <p><strong>Alejo “El del Camello”</strong> impulsa oportunidades reales para quienes luchan cada día por salir adelante. 
+      Cree en el poder del trabajo, la comunidad y la esperanza como motores del cambio. 💜🐪
+    </p>
   </section>
+
+<div class="social-links">
+  <a href="https://www.instagram.com/alejoeldelcamello/" class="social-btn" target="_blank" title="Instagram">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram" width="20">
+    Instagram
+  </a>
+
+  <a href="https://x.com/alejodelcamello" class="social-btn" target="_blank" title="Twitter/X">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/x.svg" alt="X" width="20">
+    X (Twitter)
+  </a>
+
+  <a href="https://www.tiktok.com/@alejoeldelcamello" class="social-btn" target="_blank" title="TikTok">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg" alt="TikTok" width="20">
+    TikTok
+  </a>
+
+  <a href="https://chat.whatsapp.com/BlXfChwXszFHroaBEUDnw8" class="social-btn" target="_blank">
+    🗣️ Grupo de Calle
+  </a>
+
+  <a href="https://wa.me/573209386454" class="social-btn" target="_blank">
+    💬 Habla con el equipo del Camello
+  </a>
+
+  <a href="https://mi-registro-whatsapp-9nzs.onrender.com" class="social-btn" target="_blank">
+    📝 Formulario de registro
+  </a>
+</div>
+
 
   <footer>
     © 2025 Alejo el del Camello 🐪 | Todos los derechos reservados
